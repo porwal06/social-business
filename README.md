@@ -21,5 +21,5 @@ composer install
    - Add - `/admin/structure/taxonomy/manage/post_types_category/add`
    - List - `/admin/structure/taxonomy/manage/post_types_category/overview`
 * User Management - `/admin/people`
-* Clear
+* Rebuild & Cache management - `/admin/config/development/performance`
 
