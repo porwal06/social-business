@@ -32,5 +32,9 @@ composer install
 * Category Management - 
    - Add - `/admin/structure/taxonomy/manage/post_types_category/add`
    - List - `/admin/structure/taxonomy/manage/post_types_category/overview`
+     ![CategoryManagement](https://github.com/user-attachments/assets/201d1ee8-fbe8-4fdd-8413-de72aff65f49)
+
 * User Management - `/admin/people`
+  ![UserManagement](https://github.com/user-attachments/assets/834851fb-bd2d-4a12-bf3c-63ef96867630)
+
 * Rebuild & Cache management - `/admin/config/development/performance`
