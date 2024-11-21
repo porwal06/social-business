@@ -2,12 +2,16 @@
 ## For generating rest endpoints (core modules)
 * JSONAPI
 * Rest
+
 ## For controlling JSON API endpoints
+
 composer require 'drupal/jsonapi_extras:^3.26'
+
 ## For API documentation installed contributed modules
-~composer require 'drupal/openapi:^2.2'~
-~composer require 'drupal/openapi_ui_redoc:^1.0@RC`~
-~composer require 'drupal/openapi_jsonapi:^3.0'~
+
+* ~composer require 'drupal/openapi:^2.2'~
+* ~composer require 'drupal/openapi_ui_redoc:^1.0@RC`~
+* ~composer require 'drupal/openapi_jsonapi:^3.0'~
 
 
 # Drush
@@ -18,19 +22,19 @@ composer require 'drupal/jsonapi_extras:^3.26'
 /admin/structure/taxonomy/manage/post_types_category/add
 
 
-Accommodation
-Activities
-Attractions
-Food and Drink
-Entertainment
-Health, Fitness and Wellness
-Nature
+ - Accommodation
+   - Air B n B
+   - Glamping
+   - Hotels
+   - Motels
+   - Resorts
+ - Activities
+ - Attractions
+ - Food and Drink
+ - Entertainment
+ - Health, Fitness and Wellness
+ - Nature
 
-Air B n B
-Glamping
-Hotels
-Motels
-Resorts
 
 # API URL
 
