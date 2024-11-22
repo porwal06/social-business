@@ -54,4 +54,4 @@ http://localhost/food-business/html/api/post-type-category?filter[parent.id]=a8b
 ## List all api documentation on postman. 
 Export attached .json file and check after updating base URL.
 
-File path: `/Drupal Social - Business.postman_collection.json`
+File path: [Drupal Social - Business.postman_collection.json](https://github.com/porwal06/social-business/blob/main/Drupal%20Social%20-%20Business.postman_collection.json)
