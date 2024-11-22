@@ -10,7 +10,10 @@
         "php": "^8.0",
         "monolog/monolog": "^2.3.5",
         "drupal/geolocation": "^3.13",
-        "drupal/jsonapi_extras": "^3.26"
+        "drupal/jsonapi_extras": "^3.26",
+        "drupal/otp": "^1.0",
+        "drupal/email_registration": "^1.4",
+        "drupal/simple_oauth_password_grant": "^1.0"
     },
     "repositories": [
         {

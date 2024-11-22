@@ -1,11 +1,18 @@
+# Library installation
+ - sudo apt-get install sendmail
 # Modules
 ## For generating rest endpoints (core modules)
 * JSONAPI
 * Rest
+* simple_oauth - Activate this module & generate public/private key from /admin/config/people/simple_oauth. Created "simple-auth-keys" folder & update path from setting.
 
-## For controlling JSON API endpoints
+## Other contributed api
+* composer require 'drupal/jsonapi_extras:^3.26' - For controlling JSON API endpoints
+* composer require 'drupal/email_registration:^1.4' - Remove username from registration which comes with core drupal registration
+* composer require 'drupal/otp:^1.0' - OTP based registration
+* composer require 'drupal/simple_oauth_password_grant:^1.0' - Provide "password" grant type
+* ~composer require 'drupal/push_notifications:^1.0@alpha' - For sending push notification (May require in future, before installing please check "Activity Send Push Notification" module)~
 
-composer require 'drupal/jsonapi_extras:^3.26'
 
 ## For API documentation installed contributed modules
 
@@ -44,3 +51,7 @@ http://localhost/food-business/html/api/post-type-category
 ## Get child category list after passing parent id
 http://localhost/food-business/html/api/post-type-category?filter[parent.id]=a8bdfa4e-a0bb-48b7-9e2b-edc0fd9427a9&include=parent
 
+## List all api documentation on postman. 
+Export attached .json file and check after updating base URL.
+
+File path: `/Drupal Social - Business.postman_collection.json`

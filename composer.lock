@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0fea2198c4e95f9bac7beba568695aad",
+    "content-hash": "03eeb3c0875fdb46d6899ba09be03d9e",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1707,16 +1707,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "10.2.10",
+            "version": "10.2.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "cc654a9fd9d7b149b9c554a9114610681a22c343"
+                "reference": "91d16ae01bcf56e2ab7160348feac6ba3bbcc1f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/cc654a9fd9d7b149b9c554a9114610681a22c343",
-                "reference": "cc654a9fd9d7b149b9c554a9114610681a22c343",
+                "url": "https://api.github.com/repos/drupal/core/zipball/91d16ae01bcf56e2ab7160348feac6ba3bbcc1f9",
+                "reference": "91d16ae01bcf56e2ab7160348feac6ba3bbcc1f9",
                 "shasum": ""
             },
             "require": {
@@ -1864,13 +1864,13 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "support": {
-                "source": "https://github.com/drupal/core/tree/10.2.10"
+                "source": "https://github.com/drupal/core/tree/10.2.11"
             },
-            "time": "2024-10-16T00:22:27+00:00"
+            "time": "2024-11-20T17:59:53+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "10.2.10",
+            "version": "10.2.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
@@ -1914,7 +1914,7 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-composer-scaffold/tree/10.2.10"
+                "source": "https://github.com/drupal/core-composer-scaffold/tree/10.2.11"
             },
             "time": "2024-04-09T07:27:23+00:00"
         },
@@ -2338,6 +2338,82 @@
             }
         },
         {
+            "name": "drupal/email_registration",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/email_registration.git",
+                "reference": "8.x-1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/email_registration-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "fe7a91b858a98533fc1d7550b0917fc80523f186"
+            },
+            "require": {
+                "drupal/core": "^9.1 || ^10"
+            },
+            "conflict": {
+                "drupal/commerce": "<2.12"
+            },
+            "require-dev": {
+                "drupal/commerce": "^2.0",
+                "drupal/token": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.4",
+                    "datestamp": "1700548925",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Greg Knaddison (greggles)",
+                    "homepage": "https://www.drupal.org/u/greggles",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Andrey Postnikov (andypost)",
+                    "homepage": "https://www.drupal.org/u/andypost",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Chris Herberte",
+                    "homepage": "https://www.drupal.org/u/chris-herberte",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Moshe Weitzman (moshe weitzman)",
+                    "homepage": "https://www.drupal.org/u/moshe-weitzman",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "grevil",
+                    "homepage": "https://www.drupal.org/user/3668491"
+                },
+                {
+                    "name": "moshe weitzman",
+                    "homepage": "https://www.drupal.org/user/23"
+                }
+            ],
+            "description": "Allows users to register with an email address as their username.",
+            "homepage": "https://www.drupal.org/project/email_registration",
+            "support": {
+                "source": "https://git.drupalcode.org/project/email_registration",
+                "issues": "http://drupal.org/project/issues/email_registration"
+            }
+        },
+        {
             "name": "drupal/embed",
             "version": "1.9.0",
             "source": {
@@ -2515,7 +2591,7 @@
             ],
             "authors": [
                 {
-                    "name": "Berdir",
+                    "name": "berdir",
                     "homepage": "https://www.drupal.org/user/214652"
                 },
                 {
@@ -2579,7 +2655,7 @@
                     "homepage": "https://www.drupal.org/user/2416470"
                 },
                 {
-                    "name": "NickDickinsonWilde",
+                    "name": "nickdickinsonwilde",
                     "homepage": "https://www.drupal.org/user/3094661"
                 }
             ],
@@ -3481,6 +3557,10 @@
                     "name": "Alexandre Mallet",
                     "homepage": "https://github.com/woprrr",
                     "role": "Maintainer"
+                },
+                {
+                    "name": "Drupal media CI",
+                    "homepage": "https://www.drupal.org/user/3057985"
                 },
                 {
                     "name": "Drupal Media Team",
@@ -4535,6 +4615,50 @@
             }
         },
         {
+            "name": "drupal/otp",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/otp.git",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/otp-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "0397688dc4cab27d645e81bd67cc6cae7ee67022"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1715941987",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "sadashiv",
+                    "homepage": "https://www.drupal.org/user/1773304"
+                }
+            ],
+            "description": "Allows user email verification via Email",
+            "homepage": "https://www.drupal.org/project/otp",
+            "support": {
+                "source": "https://git.drupalcode.org/project/otp"
+            }
+        },
+        {
             "name": "drupal/override_node_options",
             "version": "2.7.0",
             "source": {
@@ -5347,6 +5471,64 @@
             "homepage": "https://www.drupal.org/project/simple_oauth",
             "support": {
                 "source": "https://git.drupalcode.org/project/simple_oauth"
+            }
+        },
+        {
+            "name": "drupal/simple_oauth_password_grant",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/simple_oauth_password_grant.git",
+                "reference": "1.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/simple_oauth_password_grant-1.0.0.zip",
+                "reference": "1.0.0",
+                "shasum": "9b55521cc717a87102efd0e4d678602793679a16"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10",
+                "drupal/simple_oauth": "^6",
+                "php": ">=8.0"
+            },
+            "require-dev": {
+                "drush/drush": "^12",
+                "phpspec/prophecy-phpunit": "^2"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0",
+                    "datestamp": "1726733043",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "chfoidl",
+                    "homepage": "https://www.drupal.org/user/3686637"
+                },
+                {
+                    "name": "nimoatwoodway",
+                    "homepage": "https://www.drupal.org/user/2683961"
+                },
+                {
+                    "name": "Unsupported Projects",
+                    "homepage": "https://www.drupal.org/user/291168"
+                }
+            ],
+            "description": "Provides the password grant for the simple_oauth module",
+            "homepage": "https://www.drupal.org/project/simple_oauth_password_grant",
+            "support": {
+                "source": "https://git.drupalcode.org/project/simple_oauth_password_grant"
             }
         },
         {
@@ -6529,16 +6711,16 @@
         },
         {
             "name": "embed/embed",
-            "version": "v4.4.12",
+            "version": "v4.4.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/oscarotero/Embed.git",
-                "reference": "b0e1c0496e3707794e96d4eef53ffffd538b850a"
+                "reference": "a1da3d425520bf68cefebc29e39c6122a69d7b18"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/oscarotero/Embed/zipball/b0e1c0496e3707794e96d4eef53ffffd538b850a",
-                "reference": "b0e1c0496e3707794e96d4eef53ffffd538b850a",
+                "url": "https://api.github.com/repos/oscarotero/Embed/zipball/a1da3d425520bf68cefebc29e39c6122a69d7b18",
+                "reference": "a1da3d425520bf68cefebc29e39c6122a69d7b18",
                 "shasum": ""
             },
             "require": {
@@ -6598,7 +6780,7 @@
             "support": {
                 "email": "oom@oscarotero.com",
                 "issues": "https://github.com/oscarotero/Embed/issues",
-                "source": "https://github.com/oscarotero/Embed/tree/v4.4.12"
+                "source": "https://github.com/oscarotero/Embed/tree/v4.4.13"
             },
             "funding": [
                 {
@@ -6614,7 +6796,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2024-07-24T14:08:11+00:00"
+            "time": "2024-11-21T20:13:38+00:00"
         },
         {
             "name": "fileeye/pel",
@@ -6683,12 +6865,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/goalgorilla/open_social.git",
-                "reference": "d69b91cd8d3a3da81729955ea3a2fafc581e963e"
+                "reference": "a53028ca01ea9ffce7c645484bd2f2b6116a58b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/goalgorilla/open_social/zipball/d69b91cd8d3a3da81729955ea3a2fafc581e963e",
-                "reference": "d69b91cd8d3a3da81729955ea3a2fafc581e963e",
+                "url": "https://api.github.com/repos/goalgorilla/open_social/zipball/a53028ca01ea9ffce7c645484bd2f2b6116a58b7",
+                "reference": "a53028ca01ea9ffce7c645484bd2f2b6116a58b7",
                 "shasum": ""
             },
             "require": {
@@ -6894,7 +7076,7 @@
             "support": {
                 "source": "https://github.com/goalgorilla/open_social/tree/12.4.6"
             },
-            "time": "2024-11-11T15:47:05+00:00"
+            "time": "2024-11-20T08:50:47+00:00"
         },
         {
             "name": "goalgorilla/open_social_upgrade_patches",
@@ -9599,16 +9781,16 @@
         },
         {
             "name": "spatie/color",
-            "version": "1.6.0",
+            "version": "1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/color.git",
-                "reference": "02ce48c480f86d65702188f738f4e8ccad1b999a"
+                "reference": "4c540ffbef68a3df3d209718ae06deaab081e708"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/color/zipball/02ce48c480f86d65702188f738f4e8ccad1b999a",
-                "reference": "02ce48c480f86d65702188f738f4e8ccad1b999a",
+                "url": "https://api.github.com/repos/spatie/color/zipball/4c540ffbef68a3df3d209718ae06deaab081e708",
+                "reference": "4c540ffbef68a3df3d209718ae06deaab081e708",
                 "shasum": ""
             },
             "require": {
@@ -9646,7 +9828,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/color/issues",
-                "source": "https://github.com/spatie/color/tree/1.6.0"
+                "source": "https://github.com/spatie/color/tree/1.6.1"
             },
             "funding": [
                 {
@@ -9654,7 +9836,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-09-20T14:00:15+00:00"
+            "time": "2024-11-18T15:00:47+00:00"
         },
         {
             "name": "steverhoades/oauth2-openid-connect-server",

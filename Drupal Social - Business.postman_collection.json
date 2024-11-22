@@ -1,0 +1,351 @@
+{
+	"info": {
+		"_postman_id": "562612a3-0b93-4fe2-8a3a-a43251502967",
+		"name": "Drupal Social - Business",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26503145"
+	},
+	"item": [
+		{
+			"name": "User-login-token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"name": "cache-control",
+						"type": "text"
+					},
+					{
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"name": "postman-token",
+						"type": "text"
+					},
+					{
+						"key": "Content-Length",
+						"value": "0",
+						"name": "content-length",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"name": "host",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.39.1",
+						"name": "user-agent",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*",
+						"name": "accept",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"name": "accept-encoding",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"name": "connection",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "client_id",
+							"value": "{{social-business-client_id}}",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{social-business-client-secret}}",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "d.porwal06+register2@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "121212",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{social-business-url}}/oauth/token",
+					"host": [
+						"{{social-business-url}}"
+					],
+					"path": [
+						"oauth",
+						"token"
+					]
+				},
+				"description": "API used for user's login. It will return access_token which will use for all authenticated services. Like post creation, like, follow, message etc\n\nAccess token validity is 300 sec ie. 5 mins"
+			},
+			"response": []
+		},
+		{
+			"name": "User-login-refresh-token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"name": "cache-control",
+						"type": "text"
+					},
+					{
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"name": "postman-token",
+						"type": "text"
+					},
+					{
+						"key": "Content-Length",
+						"value": "0",
+						"name": "content-length",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"name": "host",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.39.1",
+						"name": "user-agent",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*",
+						"name": "accept",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"name": "accept-encoding",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"name": "connection",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "client_id",
+							"value": "{{social-business-client_id}}",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{social-business-client-secret}}",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "refresh_token",
+							"type": "text"
+						},
+						{
+							"key": "refresh_token",
+							"value": "def50200e03ee0c61fe1071a0e865622b0e719f592a86036c1311bd09e2fc1b6b46944a8e91d2dc252d874b8269afb306715afd9f050df8dff334ab504375762b7abbbf88d2bf6e8cae6774d36672c7df8b41e86e479ad0cb374c6364557b096688791af24d6ebd3d1a96e08875a089a03233503aa350ef74e583ae6430afb1194729580e35b1ef7d6b0dfeaa0ba62abc9223a9f3f918d28281bfc29c6d31d31e67c810eea2c3d102c68929fc6ad7cdf4cb5d04106b25a5dc4795a80bde376586d4838c51b5bbd2e3484ebcd61f94d4c2e0586f4fda749eb2eb30ae60da9fc38eba0de75eb540f76773b10a914f8b8809543ff17df4be5f41cd531be4ed230879564d335bdeaeecbb5b5597e0a8d6c1117d230cb7bfcb2cd364a4df84b53cec72d567e09adf0c340ae6c160c0f35f84d29d496c7e710b537eeba7218d782ce2cdee4c7516aeb1c4a9e4f0f64f0b58a43958134b3c3e54dacf925918d6b1e28f2dfcbbd3a3284a72ce4388ef9ec8eadf8f3c0520af53a31bc26ee87f651eb30dd26543816abb53477132569c6ae",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{social-business-url}}/oauth/token",
+					"host": [
+						"{{social-business-url}}"
+					],
+					"path": [
+						"oauth",
+						"token"
+					]
+				},
+				"description": "When access token get expire, use this service to renew access token. This way we can retain user login for longer perriod. Default refresh token validity is 1209600 sec ie. 14 days"
+			},
+			"response": []
+		},
+		{
+			"name": "User register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"name": "cache-control",
+						"type": "text"
+					},
+					{
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"name": "postman-token",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "text/plain",
+						"name": "content-type",
+						"type": "text"
+					},
+					{
+						"key": "Content-Length",
+						"value": "<calculated when request is sent>",
+						"name": "content-length",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"name": "host",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.39.1",
+						"name": "user-agent",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*",
+						"name": "accept",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"name": "accept-encoding",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"name": "connection",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"mail\": \"user@example.com\",\n  \"pass\": \"user_password\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{social-business-url}}/user/register?_format=json",
+					"host": [
+						"{{social-business-url}}"
+					],
+					"path": [
+						"user",
+						"register"
+					],
+					"query": [
+						{
+							"key": "_format",
+							"value": "json"
+						}
+					]
+				},
+				"description": "Comming soon......"
+			},
+			"response": []
+		},
+		{
+			"name": "Post type & category list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{social-business-url}}/api/post-type-category",
+					"host": [
+						"{{social-business-url}}"
+					],
+					"path": [
+						"api",
+						"post-type-category"
+					]
+				},
+				"description": "Get list of all category with it's type"
+			},
+			"response": []
+		},
+		{
+			"name": "Post category list as per type id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{social-business-url}}/api/post-type-category?filter[parent.id]=a8bdfa4e-a0bb-48b7-9e2b-edc0fd9427a9&include=parent",
+					"host": [
+						"{{social-business-url}}"
+					],
+					"path": [
+						"api",
+						"post-type-category"
+					],
+					"query": [
+						{
+							"key": "filter[parent.id]",
+							"value": "a8bdfa4e-a0bb-48b7-9e2b-edc0fd9427a9"
+						},
+						{
+							"key": "include",
+							"value": "parent"
+						}
+					]
+				},
+				"description": "Get list of category as per single type"
+			},
+			"response": []
+		}
+	]
+}
