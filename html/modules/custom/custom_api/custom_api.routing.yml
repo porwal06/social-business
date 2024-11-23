@@ -1,0 +1,8 @@
+custom_api.register:
+  path: '/api/register'
+  defaults:
+    _controller: '\Drupal\custom_api\Controller\UserRegistrationController::register'
+    _title: 'User Registration API'
+  methods: [POST]
+  requirements:
+    _access: 'TRUE'

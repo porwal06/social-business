@@ -1,0 +1,10 @@
+name: 'Custom APIs'
+type: module
+description: 'Provides a custom API endpoint.'
+package: Custom
+core_version_requirement: ^9 || ^10
+dependencies:
+  - drupal:user
+  - drupal:jsonapi
+  - drupal:profile
+  - otp
