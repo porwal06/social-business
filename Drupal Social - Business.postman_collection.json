@@ -2,6 +2,7 @@
 	"info": {
 		"_postman_id": "562612a3-0b93-4fe2-8a3a-a43251502967",
 		"name": "Drupal Social - Business",
+		"description": "List of webserives for Social business",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "26503145"
 	},
@@ -272,7 +273,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"mail\": \"user@example.com\",\n  \"pass\": \"user_password\"\n}\n",
+					"raw": "{\n  \"email\": \"user8@example.com\",\n  \"password\": \"user_password\",\n  \"first_name\": \"DDD web\",\n  \"last_name\": \"Service\"\n}\n",
 					"options": {
 						"raw": {
 							"language": "text"
@@ -280,22 +281,16 @@
 					}
 				},
 				"url": {
-					"raw": "{{social-business-url}}/user/register?_format=json",
+					"raw": "{{social-business-url}}/api/register",
 					"host": [
 						"{{social-business-url}}"
 					],
 					"path": [
-						"user",
+						"api",
 						"register"
-					],
-					"query": [
-						{
-							"key": "_format",
-							"value": "json"
-						}
 					]
 				},
-				"description": "Comming soon......"
+				"description": "Do registration with basic information, user image & category selection will be added later."
 			},
 			"response": []
 		},
@@ -344,6 +339,64 @@
 					]
 				},
 				"description": "Get list of category as per single type"
+			},
+			"response": []
+		},
+		{
+			"name": "verifyOTP",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"user8@example.com\",\n    \"otp\": \"6796\"\n}",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{social-business-url}}/api/otp/verify",
+					"host": [
+						"{{social-business-url}}"
+					],
+					"path": [
+						"api",
+						"otp",
+						"verify"
+					]
+				},
+				"description": "Verify OTP which will be received after registration."
+			},
+			"response": []
+		},
+		{
+			"name": "resendOtp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"user8@example.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{social-business-url}}/api/otp/resend",
+					"host": [
+						"{{social-business-url}}"
+					],
+					"path": [
+						"api",
+						"otp",
+						"resend"
+					]
+				},
+				"description": "Resend OTP if didn't get after registration OR it get expire. You can see new OTP as api response but later we will remove it."
 			},
 			"response": []
 		}
