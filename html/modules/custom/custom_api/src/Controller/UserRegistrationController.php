@@ -59,9 +59,9 @@ class UserRegistrationController extends ControllerBase {
     $profile->save();
 
     // Trigger OTP verification.
-    $otp_send = _otp_generate_otp($user->id(), TRUE);
+    $otp_send = _otp_generate_otp($user->id(), TRUE, TRUE);
     if ($otp_send) {
-      $message = t("A new verification code has been sent to @email", ['@email' => $data['email']]);
+      $message = t("A new verification code has been sent to @email and OTP @otp", ['@email' => $data['email'], '@otp' => $otp_send['otp']]);
     }
     else {
       $message = t("You account has been registered but OTP generation reached the maximum number of attempts. Please contact to admin.");

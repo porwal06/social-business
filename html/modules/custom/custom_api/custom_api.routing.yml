@@ -6,3 +6,21 @@ custom_api.register:
   methods: [POST]
   requirements:
     _access: 'TRUE'
+  
+custom_api.otp_verification:
+  path: '/api/otp/verify'
+  defaults:
+    _controller: '\Drupal\custom_api\Controller\OTPVerificationController::verifyOtp'
+    _title: 'Verify OTP'  
+  methods: [POST]
+  requirements:
+    _permission: 'access content'
+
+custom_api.resend_otp:
+  path: '/api/otp/resend'
+  defaults:
+    _controller: '\Drupal\custom_api\Controller\OTPVerificationController::resendOtp'
+    _title: 'Resend OTP'  
+  methods: [POST]
+  requirements:
+    _permission: 'access content'
